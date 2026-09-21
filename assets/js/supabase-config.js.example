@@ -1,0 +1,14 @@
+// supabase-config.js.example
+// Tracked template. The real file (assets/js/supabase-config.js) is
+// GIT-IGNORED and is generated/overwritten at deploy time with the real
+// project URL and the publishable (anon) key.
+//
+// To run locally: copy this file to assets/js/supabase-config.js and fill
+// the values from your Supabase project dashboard (Project Settings → API).
+// Never put the service_role / secret key here — the anon key is the
+// ONLY key that belongs in the browser.
+
+window.SUPABASE_CONFIG = {
+  url: '',
+  anonKey: ''
+};
