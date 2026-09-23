@@ -701,8 +701,10 @@ const App = {
             ${cats.map(c => `
               <a href="#category-${c.id}" class="cat-card">
                 <div class="cat-icon">${c.image ? `<img src="${Utils.escapeUrl(c.image)}" alt="${Utils.escapeHtml(c.name)}" loading="lazy" width="60" height="60">` : (c.icon || '📦')}</div>
-                <div class="cat-name">${Utils.escapeHtml(c.name)}</div>
-                <div class="cat-count">${Store.getProducts({ categoryId: c.id, active: true }).length} منتج</div>
+                <div class="cat-text">
+                  <div class="cat-name">${Utils.escapeHtml(c.name)}</div>
+                  <div class="cat-count">${Store.getProducts({ categoryId: c.id, active: true }).length} منتج</div>
+                </div>
               </a>
             `).join('')}
           </div>
